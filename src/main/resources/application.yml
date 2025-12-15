@@ -1,0 +1,28 @@
+---
+spring:
+  application:
+    name: cicd-dashboard-api
+    version: 1.0.0
+  datasource:
+    url: jdbc:postgresql://localhost:15432/cicd-dashboard
+    username: cicd-dashboard
+    password: cicd-dashboard
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+  jackson:
+    default-property-inclusion: non_null
+    property-naming-strategy: SNAKE_CASE
+  flyway:
+    enabled: false
+springdoc:
+  swagger-ui:
+    path: /api-docs
+logging:
+  level:
+    fr.iandeveseleer.cicddashboardapi: debug

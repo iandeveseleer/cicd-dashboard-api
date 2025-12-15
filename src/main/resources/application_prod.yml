@@ -1,0 +1,10 @@
+---
+spring:
+  datasource:
+    url: jdbc:postgresql://db:5432/cicd-dashboard
+    username: cicd-dashboard
+    password: cicd-dashboard
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    show-sql: false
