@@ -26,3 +26,7 @@ springdoc:
 logging:
   level:
     fr.iandeveseleer.cicddashboardapi: debug
+
+gitlab:
+  url: http://localhost:8088
+  token: ${GITLAB_TOKEN:glpat-0uSqxFkRoSmqEiDVsfpg2m86MQp1OjEH.01.0w1ns1wme}
